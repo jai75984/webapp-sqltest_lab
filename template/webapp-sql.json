@@ -50,6 +50,7 @@
             "kind": "linux",
             "location": "[resourceGroup().location]",
             "properties": {
+                "reserved": true,
                 "name": "[variables('hostingplanName')]",
                 "workerSizeId": "[parameters('workerSize')]",
                 "numberOfWorkers": "1"
