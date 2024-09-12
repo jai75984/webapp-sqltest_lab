@@ -78,7 +78,7 @@
                     "name": "web",
                     "apiVersion": "2016-08-01",
                     "properties": {
-                        "linuxFxVersion": "TOMCAT|8.5-jre8"
+                        "linuxFxVersion": "TOMCAT|9.0-jre11"
                     },
                     "dependsOn": [
                         "[concat('Microsoft.Web/sites/', variables('websiteName'))]"
