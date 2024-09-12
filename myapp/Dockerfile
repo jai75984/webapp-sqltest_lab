@@ -18,7 +18,7 @@ COPY . .
 RUN mvn package -Dmaven.repo.local=/usr/src/repo
 
 # == Stage 2: Copy the application into the production image
-FROM tomcat:8.5-jre8-alpine
+FROM tomcat:9.0-jre11-alpine
 WORKDIR /usr/local/tomcat/webapps
 COPY --from=builder /usr/src/work/target/myapp.war .
 RUN mv myapp.war ROOT.war && rm -rf ROOT
